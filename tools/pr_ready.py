@@ -53,7 +53,7 @@ LINE_LIMIT = 500
 # longer builds (2026-10-26: it keeps the AI pool and a few services; Linux work goes to playhorizon's runner).
 HOST_SETUP = {
     "macmini": "source ~/.cargo/env; export PATH=/opt/homebrew/bin:$PATH CARGO_BUILD_JOBS=${CARGO_BUILD_JOBS:-10}",
-    "local": "",
+    "local": "export PATH=/opt/homebrew/bin:$PATH",
 }
 # Hosts that hold the vanilla data, and how a run there gets it: CI's own runner scripts on the parity runner's
 # workspace (as its second runner does), so the vanilla data, preparations, recorded harness dependencies, passes and
